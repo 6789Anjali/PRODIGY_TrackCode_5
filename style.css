@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(135deg, #4A00E0, #8E2DE2); /* Gradient background */
+    font-family: 'Poppins', sans-serif; /* More modern font */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #FFFFFF; /* White text color */
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent container */
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    backdrop-filter: blur(12px); /* Subtle blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Softer border */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#weather-container:hover {
+    transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+h2 {
+    color: #FFE53B;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #FFE53B; /* Yellow border */
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+button {
+    background: #FF9A9E;
+    color: #333;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #FF6A6A;
+}
+
+#temp-div p {
+    font-size: 50px;
+    margin-top: -10px;
+    color: #FFE53B;
+}
+
+#weather-info p {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#weather-icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px; 
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: #FFE53B;
+    font-weight: bold;
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+.hourly-item:hover img {
+    transform: scale(1.2); /* Zoom effect on icons */
+}
+
+#hourly-heading {
+    color: #FFE53B;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
